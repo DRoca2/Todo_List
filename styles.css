@@ -1,0 +1,75 @@
+body{
+    background-color: blanchedalmond;
+}
+
+li{
+    list-style: none;
+}
+    
+.title{
+    margin-top: 5px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;  
+    color: palevioletred;
+}
+
+.add:hover{
+    color: palevioletred
+}
+
+.delete:hover{
+    color: palevioletred
+}
+
+.edit:hover{
+    color: palevioletred
+}
+
+.clear:hover{
+    color: palevioletred
+}
+
+.add-tasks{
+    font-size: 30px;
+    text-align: left;  
+    font-family: 'Arial', sans-serif;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.tasks{
+    font-size: 30px;
+    text-align: left;  
+    font-family: 'Arial', sans-serif;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.task-completed{
+    font-size: 30px;
+    text-align: left;  
+    font-family: 'Arial', sans-serif;
+    color: palevioletred;
+    font-weight: bold; 
+}
+
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.clear-tasks{
+    float: right;
+    text-align: center;
+}
+
+#clear {
+    background-color: palevioletred;
+    font-size: 18px; 
+    padding: 10px 50px;
+    color: white;
+    font-weight: bold; 
+    border: 2px solid white; 
+}
+
