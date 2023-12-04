@@ -1,57 +1,62 @@
-body{
+body {
     background-color: blanchedalmond;
+    transition: background-color 0.5s ease;
 }
 
-li{
+/* Add styles for dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+li {
     list-style: none;
 }
-    
-.title{
+
+.login,
+.title,
+.add-tasks,
+.upload-tasks,
+.tasks,
+.task-completed {
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
     margin-top: 5px;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;  
+    text-align: center;
     color: palevioletred;
 }
 
-.add:hover{
-    color: palevioletred
-}
-
-.delete:hover{
-    color: palevioletred
-}
-
-.edit:hover{
-    color: palevioletred
-}
-
-.clear:hover{
-    color: palevioletred
-}
-
-.add-tasks{
+.login,
+.add-tasks,
+.upload-tasks,
+.tasks,
+.task-completed {
     font-size: 30px;
-    text-align: left;  
-    font-family: 'Arial', sans-serif;
-    color: brown;
     font-weight: bold;
 }
 
-.tasks{
-    font-size: 30px;
-    text-align: left;  
-    font-family: 'Arial', sans-serif;
+.login {
     color: brown;
-    font-weight: bold;
 }
 
-.task-completed{
-    font-size: 30px;
-    text-align: left;  
-    font-family: 'Arial', sans-serif;
-    color: brown;
-    font-weight: bold; 
+.add:hover,
+.delete:hover,
+.edit:hover,
+.clear:hover {
+    color: palevioletred;
+}
+
+#mode-toggle {
+    background-color: palevioletred;
+    font-size: 18px;
+    padding: 10px 50px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
 }
 
 #completed-tasks label {
@@ -59,17 +64,16 @@ li{
     color: #888;
 }
 
-.clear-tasks{
+.clear-tasks {
     float: right;
     text-align: center;
 }
 
 #clear {
     background-color: palevioletred;
-    font-size: 18px; 
+    font-size: 18px;
     padding: 10px 50px;
     color: white;
-    font-weight: bold; 
-    border: 2px solid white; 
+    font-weight: bold;
+    border: 2px solid white;
 }
-

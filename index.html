@@ -1,68 +1,76 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>To-do List</title>
-            <link rel="stylesheet" href="styles.css">
-        </head>
+<html>
 
-        <body>
-            <div class ="container">
-                <div class="title">
-                    <h1 id="title">To Do List</h1>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-                <br>
+<body>
+    <div id="my-dropzone" class="dropzone"></div>
 
-                <div class="add-tasks">
-                    <p>Add Tasks: 
-                    <hr>
-                    <input id="new-task" type="text">
-                    <button class="add" onclick="newElement()">Add</button>
-                    </p>
-                    <br>
-                </div>
+    <div class="container">
+        <div class="title">
+            <h1 id="title">To Do List</h1>
+        </div>
 
-                <div class ="tasks">
-                    <p>Things to do: </p>
-                    <hr>
+        <br>
 
-                    <ul id="incomplete-tasks">
-                        <li><input type="checkbox" unchecked="">Hit the gym 
-                        <button class="edit">Edit</button> 
-                        <button class="delete">Delete</button>
-                        </li>
+        <div class="add-tasks">
+            <p>Add Tasks:
+                <hr>
+                <input id="new-task" type="text">
+                <button class="add" onclick="newElement()">Add</button>
+            </p>
+            <br>
+        </div>
 
-                        <li><input type="checkbox" unchecked="">Pack lunch 
-                            <button class="edit">Edit</button> 
-                            <button class="delete">Delete</button>
-                        </li>
+        <br>
 
-                        <li><input type="checkbox" unchecked="">Study 
-                            <button class="edit">Edit</button> 
-                            <button class="delete">Delete</button>
-                        </li>
+        <div class="tasks">
+            <p>Things to do: </p>
+            <hr>
 
-                    </ul>
+            <ul id="incomplete-tasks">
+                <li><input type="checkbox" unchecked="">Hit the gym
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </li>
 
-                    <br>
-                </div>
+                <li><input type="checkbox" unchecked="">Pack lunch
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </li>
 
-                <div class ="task-completed">
-                    <p>Completed Tasks: </p>
-                    <hr>
-                    <ul id="completed-tasks"">
-                        <li><input type="checkbox" checked=""><s>Wake up</s></li>
-                    </ul>
-                    <br>
-                </div>
+                <li><input type="checkbox" unchecked="">Study
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </li>
 
-                <div class="clear-tasks">
-                    <button id="clear">
-                        <p>Clear</p>
-                    </button>
-                </div>
-            </div>
-            <script src="script.js"></script>
-        </body>
-    </html>
+            </ul>
+
+            <br>
+        </div>
+
+        <div class="task-completed">
+            <p>Completed Tasks: </p>
+            <hr>
+            <ul id="completed-tasks">
+                <li><input type="checkbox" checked=""><s>Wake up</s></li>
+            </ul>
+            <br>
+        </div>
+
+        <button id="mode-toggle">Toggle Dark/Light Mode</button>
+
+        <div class="clear-tasks">
+            <button id="clear">
+                <p>Clear</p>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
